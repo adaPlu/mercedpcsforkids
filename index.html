@@ -1,77 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Merced PCs for Kids</title>
-<style>
-body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f8f9fa; color: #333; }
-header { background-color: #0056b3; color: #fff; padding: 2rem 1rem; text-align: center; }
-section { padding: 2rem 1rem; max-width: 800px; margin: auto; }
-h1, h2 { margin-top: 0; }
-.card { background-color: #fff; margin-bottom: 2rem; padding: 1rem 1.5rem; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
-form label { display: block; margin-top: 1rem; font-weight: bold; }
-form input[type="text"], form textarea { width: 100%; padding: 0.5rem; border-radius: 4px; border: 1px solid #ccc; margin-top: 0.5rem; }
-form button { margin-top: 1rem; background-color: #0056b3; color: #fff; border: none; padding: 0.75rem 1.5rem; border-radius: 4px; cursor: pointer; }
-form button:hover { background-color: #003e7e; }
-footer { background-color: #343a40; color: #fff; text-align: center; padding: 1rem; }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Merced PCs for Kids</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f8f9fa; color: #333; }
+    header { background-color: #0056b3; color: #fff; padding: 2rem 0; text-align: center; }
+    section { padding: 2rem 1rem; max-width: 800px; margin: auto; }
+    h1, h2 { margin-top: 0; }
+    .card { background-color: #fff; margin-bottom: 2rem; padding: 1rem 1.5rem; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+    form label { display: block; margin-top: 1rem; font-weight: bold; }
+    form input[type="text"], form input[type="email"], form textarea { width: 100%; padding: 0.5rem; border: 1px solid #ccc; margin-top: 0.25rem; border-radius: 4px; }
+    form button { margin-top: 1rem; background-color: #0056b3; color: #fff; border: none; padding: 0.75rem 1.5rem; border-radius: 4px; cursor: pointer; }
+    form button:hover { background-color: #003e7e; }
+    footer { background-color: #343a40; color: #fff; text-align: center; padding: 1rem; }
+  </style>
 </head>
 <body>
-<header>
-  <h1>Merced PCs for Kids</h1>
-  <p>Refurbishing donated computers for low-income kids and families in Merced, California.</p>
-</header>
-<section class="card">
-  <h2>Our Mission</h2>
-  <p>We collect old PC parts and whole computers, refurbish them, and provide them to kids and families in need. Your generosity helps bridge the digital divide and offers more opportunities for those without reliable access to technology.</p>
-</section>
-<section class="card">
-  <h2>What We Accept</h2>
-  <ul>
-    <li>Whole desktop or laptop computers (from the last 10-15 years)</li>
-    <li>Motherboards, CPUs, RAM, storage drives, power supplies</li>
-    <li>Monitors, keyboards, mice, and cables</li>
-  </ul>
-  <p>If you're unsure whether an item can be used, please email us and we'll let you know.</p>
-  <p><strong>Data privacy tip:</strong> Please wipe or remove personal data from storage devices before donating.</p>
-</section>
-<section class="card">
-  <h2>Request a Pickup</h2>
-  <p>If you'd like us to pick up your donation, please fill out the form below. We'll be in touch to schedule a pickup time.</p>
-  <form action="https://formsubmit.co/mercedpcsforkids@gmail.com" method="POST">
-    <input type="hidden" name="_next" value="https://adaplu.github.io/mercedpcsforkids/thank-you.html">
-    <input type="hidden" name="_subject" value="New Pickup Request">
-    <input type="hidden" name="_captcha" value="false">
-    <label for="name">Your Name</label>
-    <input type="text" id="name" name="name" required>
-    <label for="address">Address for Pickup</label>
-    <textarea id="address" name="address" rows="3" required></textarea>
-    <label for="items">Items to Donate</label>
-    <textarea id="items" name="items" rows="3" required></textarea>
-    <button type="submit">Submit Request</button>
-  </form>
-</section>
-<section class="card">
-  <h2>Contact Us</h2>
-  <p>If you have any questions or prefer to arrange drop-off, please contact us at <a href="mailto:mercedpcsforkids@gmail.com">mercedpcsforkids@gmail.com</a>.</p>
-</section>
-<footer>
-  <p>&copy; 2025 Merced PCs for Kids</p>
-</footer>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Merced PCs for Kids",
-  "url": "https://adaplu.github.io/mercedpcsforkids/",
-  "contactPoint": [{
-    "@type": "ContactPoint",
-    "email": "mercedpcsforkids@gmail.com",
-    "contactType": "customer support"
-  }],
-  "sameAs": []
-}
-</script>
+  <header>
+    <h1>Merced PCs for Kids</h1>
+    <p>Refurbishing donated computers for low-income kids and families in Merced, California.</p>
+  </header>
+  <section class="card">
+    <h2>Our Mission</h2>
+    <p>We collect old PC parts and whole computers, refurbish them, and provide them to kids and families in need. Your generosity helps bridge the digital divide and offers more opportunities for those without reliable access to technology.</p>
+  </section>
+  <section class="card">
+    <h2>What We Accept</h2>
+    <ul>
+      <li>Whole desktop or laptop computers (from the last 10-15 years)</li>
+      <li>Motherboards, CPUs, RAM, storage drives, power supplies</li>
+      <li>Monitors, keyboards, mice, and cables</li>
+    </ul>
+    <p>If you're unsure whether an item can be used, please email and we'll let you know.</p>
+    <p><strong>Data privacy tip:</strong> Please wipe or remove personal data from storage devices before donating.</p>
+  </section>
+  <section class="card">
+    <h2>Request a Pickup</h2>
+    <p>If you'd like us to pick up your donation, please fill out the form below. We'll be in touch to schedule a pickup time.</p>
+    <form action="https://formsubmit.co/mercedpcsforkids@gmail.com" method="post">
+      <input type="hidden" name="_next" value="https://adaplu.github.io/mercedpcsforkids/thank-you.html">
+      <input type="hidden" name="_subject" value="New Pickup Request">
+      <input type="hidden" name="_captcha" value="false">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" required>
+      <label for="address">Address for Pickup</label>
+      <textarea id="address" name="address" rows="3" required></textarea>
+      <label for="phone">Contact Phone</label>
+      <input type="text" id="phone" name="phone" required>
+      <label for="items">Items to Donate</label>
+      <textarea id="items" name="items" rows="3" required></textarea>
+      <button type="submit">Submit Request</button>
+    </form>
+  </section>
+  <section class="card">
+    <h2>Request a PC</h2>
+    <p>If you or someone you know needs a working PC, you can request one here. Availability is first come, first served, with rare exceptions when someone may have a great or immediate need and may be moved up in the queue.</p>
+    <p>Please note we work in our spare time and rely on donations, so there may be some time between your request for a PC and receiving one. Thank you for your patience.</p>
+    <form action="https://formsubmit.co/mercedpcsforkids@gmail.com" method="post">
+      <input type="hidden" name="_next" value="https://adaplu.github.io/mercedpcsforkids/thank-you.html">
+      <input type="hidden" name="_subject" value="New PC Request">
+      <input type="hidden" name="_captcha" value="false">
+      <label for="pc-name">Your Name</label>
+      <input type="text" id="pc-name" name="name" required>
+      <label for="pc-address">Address</label>
+      <textarea id="pc-address" name="address" rows="3" required></textarea>
+      <label for="pc-phone">Contact Phone</label>
+      <input type="text" id="pc-phone" name="phone" required>
+      <label for="pc-email">Contact Email</label>
+      <input type="email" id="pc-email" name="email" required>
+      <label for="pc-need">Statement of Need (e.g., for a child's education or a family needing a basic working PC)</label>
+      <textarea id="pc-need" name="need" rows="3" required></textarea>
+      <button type="submit">Submit Request</button>
+    </form>
+  </section>
+  <section class="card">
+    <h2>Contact Us</h2>
+    <p>If you have any questions or prefer to arrange drop-off, please contact us at <a href="mailto:mercedpcsforkids@gmail.com">mercedpcsforkids@gmail.com</a>.</p>
+  </section>
+  <footer>
+    <p>&copy; 2025 Merced PCs for Kids</p>
+  </footer>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Merced PCs for Kids",
+    "url": "https://adaplu.github.io/mercedpcsforkids/",
+    "contactPoint": [{
+      "@type": "ContactPoint",
+      "email": "mercedpcsforkids@gmail.com",
+      "contactType": "customer support"
+    }],
+    "sameAs": []
+  }
+  </script>
 </body>
 </html>
